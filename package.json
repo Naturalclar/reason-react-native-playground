@@ -1,5 +1,5 @@
 {
-  "name": "ReasonReactNativePlayground",
+  "name": "reason-react-native-playground",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -9,11 +9,16 @@
     "re:clean": "bsb -clean-world",
     "re:watch": "bsb -clean-world -make-world -w",
     "re:build": "bsb -clean-world -make-world",
-    "test": "jest"
+    "test": "jest",
+    "start:web": "react-scripts start",
+    "build:web": "react-scripts build"
   },
   "dependencies": {
     "react": "^16.8.0",
+    "react-dom": "16.8.0",
     "react-native": "^0.60.0",
+    "react-native-web": "^0.12.0-rc.1",
+    "react-scripts": "3.2.0",
     "reason-react": "^0.7.0",
     "reason-react-native": "^0.60.0"
   },
@@ -29,5 +34,17 @@
   },
   "jest": {
     "preset": "react-native"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

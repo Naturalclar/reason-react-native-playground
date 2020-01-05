@@ -17,26 +17,22 @@ type reactNativeNewAppScreenColors = {
   "dark": string,
 };
 
-[@bs.module "react-native/Libraries/NewAppScreen"]
+[@bs.module "./Libraries/NewAppScreen"]
 external colors: reactNativeNewAppScreenColors = "Colors";
-
-[@bs.module "react-native/Libraries/Core/Devtools/openURLInBrowser"]
-external openURLInBrowser: string => unit = "default";
-
 module Header = {
-  [@react.component] [@bs.module "react-native/Libraries/NewAppScreen"]
+  [@react.component] [@bs.module "./Libraries/NewAppScreen"]
   external make: _ => React.element = "Header";
 };
 module ReloadInstructions = {
-  [@react.component] [@bs.module "react-native/Libraries/NewAppScreen"]
+  [@react.component] [@bs.module "./Libraries/NewAppScreen"]
   external make: _ => React.element = "ReloadInstructions";
 };
 module LearnMoreLinks = {
-  [@react.component] [@bs.module "react-native/Libraries/NewAppScreen"]
+  [@react.component] [@bs.module "./Libraries/NewAppScreen"]
   external make: _ => React.element = "LearnMoreLinks";
 };
 module DebugInstructions = {
-  [@react.component] [@bs.module "react-native/Libraries/NewAppScreen"]
+  [@react.component] [@bs.module "./Libraries/NewAppScreen"]
   external make: _ => React.element = "DebugInstructions";
 };
 
@@ -134,12 +130,6 @@ let app = () =>
                 "Reason React Native"->React.string
               </Text>
             </Text>
-            <TouchableOpacity
-              onPress={_ =>
-                openURLInBrowser(
-                  "https://reasonml-community.github.io/reason-react-native/en/docs/",
-                )
-              }>
               <Text
                 style=Style.(
                   style(
@@ -153,7 +143,6 @@ let app = () =>
                 "https://reasonml-community.github.io/\nreason-react-native/"
                 ->React.string
               </Text>
-            </TouchableOpacity>
           </View>
           <View style={styles##sectionContainer}>
             <Text style={styles##sectionDescription}>
