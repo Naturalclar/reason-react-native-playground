@@ -48,7 +48,6 @@ let styles =
     StyleSheet.create({
       "scrollView": style(~backgroundColor=colors##lighter, ()),
       "engine": style(~position=`absolute, ~right=0.->dp, ()),
-      "body": style(~backgroundColor=colors##white, ()),
       "sectionContainer":
         style(~marginTop=32.->dp, ~paddingHorizontal=24.->dp, ()),
       "sectionTitle":
@@ -88,7 +87,7 @@ let app = () =>
         //      <Text style={styles##footer}>Engine: Hermes</Text>
         //    </View>
         //  )}
-        <View style={styles##body}>
+        <ReactNativeLinearGradient colors=[|"#fff" ,"#fff","#f80" |] angle=45. useAngle=true>
           <View style={styles##sectionContainer}>
             <Text style={styles##sectionTitle}>
               "Step One"->React.string
@@ -152,7 +151,7 @@ let app = () =>
             </Text>
           </View>
           <LearnMoreLinks />
-        </View>
+        </ReactNativeLinearGradient>
       </ScrollView>
     </SafeAreaView>
   </>;

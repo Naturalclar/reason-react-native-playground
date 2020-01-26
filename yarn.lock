@@ -1335,6 +1335,11 @@
     eslint-plugin-react-native "3.6.0"
     prettier "1.16.4"
 
+"@reason-react-native/linear-gradient@^2.5.6":
+  version "2.5.6"
+  resolved "https://registry.yarnpkg.com/@reason-react-native/linear-gradient/-/linear-gradient-2.5.6.tgz#1f89a9ef6c132abdf081027ad062a047062aa037"
+  integrity sha512-V68Y59Bxixnq1QqZ7tcQrY5CSGG+ArH2xkInXBn3f36riECjURxUf9SXFVF/6KqQ1LvjTBgxnGEvjvH7YVIStA==
+
 "@svgr/babel-plugin-add-jsx-attribute@^4.2.0":
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/@svgr/babel-plugin-add-jsx-attribute/-/babel-plugin-add-jsx-attribute-4.2.0.tgz#dadcb6218503532d6884b210e7f3c502caaa44b1"
@@ -9302,6 +9307,11 @@ react-is@^16.8.1, react-is@^16.8.4:
   version "16.12.0"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.12.0.tgz#2cc0fe0fba742d97fd527c42a13bec4eeb06241c"
   integrity sha512-rPCkf/mWBtKc97aLL9/txD8DZdemK0vkA3JMLShjlJB3Pj3s+lpf1KaBzMfQrAmhMQB0n1cU/SUGgKKBCe837Q==
+
+react-native-linear-gradient@^2.5.6:
+  version "2.5.6"
+  resolved "https://registry.yarnpkg.com/react-native-linear-gradient/-/react-native-linear-gradient-2.5.6.tgz#96215cbc5ec7a01247a20890888aa75b834d44a0"
+  integrity sha512-HDwEaXcQIuXXCV70O+bK1rizFong3wj+5Q/jSyifKFLg0VWF95xh8XQgfzXwtq0NggL9vNjPKXa016KuFu+VFg==
 
 react-native-web@^0.12.0-rc.1:
   version "0.12.0-rc.1"
